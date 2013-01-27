@@ -8,13 +8,11 @@
   <style type="text/css">
     p { font-size: 14px; }
     img {height: 200px; }
-   .nav{margin-left:auto; margin-right:auto; position:relative;display:block;height:0;top:10px;left:0;width:720px;z-index:10}
+   .nav{margin-left:auto; margin-right:auto; position:relative;display:block;height:0;top:0px;left:0;width:720px;z-index:10}
+   ul {padding: 0; margin:0; }
    ul.arrows li, ul.arrows li a, ul.arrows li a:hover, ul.arrows li a:visited{height:28px;width:36px;display:block;text-decoration:none;font-size:1em;letter-spacing:normal;font-weight:normal;color:#000}
    ul.arrows li#previous{float:left;}
    ul.arrows li#next{float:right;}
-   .pagenumbers{}
-   .pagenumbers #pageleftnumber{float:left;}
-   .pagenumbers #pagerightnumber{float:right;}
   
    #head { clear:both; width: 720px; margin-left: auto; margin-right: auto; }
    #article { clear:both; }
@@ -110,10 +108,9 @@
 	</div> <!-- end of one -->
 
   <div class="nav">
-    <div class="pagenumbers"><span id="pageleftnumber">1</span><span id="pagerightnumber">2</span></div>
     <ul class="arrows">
-  	  <li id="previous"><a href="#" id="aprevious" onclick="slider.prev();return false;"><span>prev</span></a></li>
-      <li id="next"><a href="#" id="anext" onclick="slider.next();return false;"><span>next</span></a></li>
+  	  <li id="previous"><a href="#" onclick="slider.prev();return false;"><span>prev</span></a></li>
+      <li id="next"><a href="#" onclick="slider.next();return false;"><span>next</span></a></li>
     </ul>
   </div>
 	
