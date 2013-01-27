@@ -1,0 +1,45 @@
+	div.one {
+		height: 435px;
+		/* height of the columns + padding-top */
+		width: 720px;
+		/* width of the visible section of text */
+		overflow: hidden;
+		/* to prevent overflowing content from appearing */
+		margin: 0;
+	}
+	div#columniser {
+		height: 435px;
+		/* - see above */
+		width: 720px;
+		/* - see above */
+		overflow: visible;
+		/* this being the DIV we'll move on non-IE browsers, we want it to show all of its contents */
+		/* so when we slide it, the new columns will be visible */
+		margin: 0;
+		opacity: 1;
+		/* for the animation */
+	}
+	div.two {
+		column-count: auto;
+		column-width: 330px;
+		column-gap: 60px;
+		-webkit-column-count: auto;
+		-webkit-column-width: 330px;
+		-webkit-column-gap: 60px;
+		-moz-column-count: auto;
+		-moz-column-width: 330px;
+		-moz-column-gap: 60px;
+		height: 430px;
+		overflow: visible;
+		/* necessary here */
+		display: block;
+		padding: 0;
+		padding-top: 4px;
+	}
+	#columnified {
+		margin-left: 0;
+		width: 15540px;
+		/* width used in multicolumn.css [i.e. (column width + column gap) * 40] minus one column */
+		/* therefore, in this case, 15600 - 60 */
+		/* width declaration required for Chrome to behave as intended */
+	}
